@@ -1,12 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import Message from "@/components/Message";
-import { color, Container, display, width } from "@mui/system";
-import { Fab } from "@mui/material";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import { Container } from "@mui/system";
 import InitSection from "@/components/InitSection";
 import Services from "./ServiceSection";
+import { getDevice } from "@/utils/commonUtils";
 const inter = Inter({ subsets: ["latin"] });
 
 const messageData = [
@@ -27,7 +25,14 @@ const messageData = [
     position: "abc @ PNG Software Technologies",
   },
 ];
-export default function Home() {
+export default function Home({ device }: any) {
+  if (device === "mobile") {
+    return (
+      <div style={{ textAlign: "center", marginTop: "40%", color: 'white', fontSize: '3rem' }}>
+        Mobile site coming soon... view on desktop version
+      </div>
+    );
+  }
   return (
     <div style={{ color: "white" }}>
       <Head>
@@ -48,4 +53,13 @@ export default function Home() {
       </div>
     </div>
   );
+}
+
+export function getServerSideProps(context: any) {
+  const device = getDevice(context.req.headers["user-agent"]);
+  return {
+    props: {
+      device,
+    },
+  };
 }
