@@ -61,35 +61,39 @@ export default function Home({ device }: any) {
 				<br />
 				<section style={{ color: '#652D90', fontSize: '1.5rem' }}>
 					<p>
-						We are dedicated to delivering cutting-edge technology solutions
-						that empower businesses to thrive in the digital age. With a strong
-						focus on innovation and expertise, we offer a comprehensive range of
-						services tailored to meet the unique needs of our clients. Our team
-						of skilled professionals collaborates closely with clients,
-						understanding their challenges and objectives to develop customized
-						strategies and solutions. From implementing robust IT infrastructure
-						to developing innovative software applications and leveraging data
-						analytics, we are committed to driving efficiency, enhancing
-						productivity, and fostering growth for businesses across various
-						industries. With our customer-centric approach, technical prowess,
-						and unwavering commitment to excellence, we aim to be the preferred
-						partner for businesses navigating the ever-changing IT landscape.{' '}
+						{
+							'We are dedicated to delivering cutting-edge technology solutions\
+						that empower businesses to thrive in the digital age. With a strong\
+						focus on innovation and expertise, we offer a comprehensive range of\
+						services tailored to meet the unique needs of our clients. Our team\
+						of skilled professionals collaborates closely with clients,\
+						understanding their challenges and objectives to develop customized\
+						strategies and solutions. From implementing robust IT infrastructure\
+						to developing innovative software applications and leveraging data\
+						analytics, we are committed to driving efficiency, enhancing\
+						productivity, and fostering growth for businesses across various\
+						industries. With our customer-centric approach, technical prowess,\
+						and unwavering commitment to excellence, we aim to be the preferred\
+						partner for businesses navigating the ever-changing IT landscape.'
+						}
 					</p>
 					<p>
-						At our company, we take pride in delivering top-notch web and mobile
-						development services. Our team of experienced professionals is
-						dedicated to creating exceptional digital experiences that meet the
-						highest industry standards. Whether it's crafting responsive and
-						user-friendly websites or developing feature-rich and intuitive
-						mobile applications, we combine technical expertise with creative
-						innovation to bring our clients' visions to life. We stay up-to-date
-						with the latest industry trends and technologies, ensuring that our
-						solutions are at the forefront of digital innovation. From
-						conceptualization to deployment, our streamlined development process
-						focuses on delivering excellence at every step. Trust us to deliver
-						the best in web and mobile development, providing you with scalable,
-						robust, and visually stunning digital solutions that leave a lasting
-						impact on your audience.
+						{
+							"At our company, we take pride in delivering top-notch web and mobile\
+						development services. Our team of experienced professionals is\
+						dedicated to creating exceptional digital experiences that meet the\
+						highest industry standards. Whether it's crafting responsive and\
+						user-friendly websites or developing feature-rich and intuitive\
+						mobile applications, we combine technical expertise with creative\
+						innovation to bring our clients' visions to life. We stay up-to-date\
+						with the latest industry trends and technologies, ensuring that our\
+						solutions are at the forefront of digital innovation. From\
+						conceptualization to deployment, our streamlined development process\
+						focuses on delivering excellence at every step. Trust us to deliver\
+						the best in web and mobile development, providing you with scalable,\
+						robust, and visually stunning digital solutions that leave a lasting\
+						impact on your audience."
+						}
 					</p>
 				</section>
 			</div>
@@ -114,7 +118,7 @@ export default function Home({ device }: any) {
 						color: '#652D90',
 					}}
 				>
-					What's on Your mind
+					{"What's on Your mind"}
 				</h1>
 				<br />
 				<Query />
