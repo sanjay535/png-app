@@ -23,7 +23,7 @@ const Query = () => {
 	};
 	return (
 		<>
-			<section className="formSection">
+			{/* <section className="formSection">
 				Name:{' '}
 				<input
 					className={`input-text ${error ? 'err' : ''}`}
@@ -49,7 +49,7 @@ const Query = () => {
 					rows={5}
 					onChange={onChange}
 				/>
-			</section>
+			</section> */}
 		</>
 	);
 };
