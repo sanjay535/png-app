@@ -1,41 +1,122 @@
 body,
 html {
-  padding: 0;
-  margin: 0;
-  font-family: monospace;
-  overflow-y: scroll;
-  background-color: rgb(101, 45, 144, 0.9);
+	padding: 0;
+	margin: 0;
+	font-family: monospace;
+	overflow-y: scroll;
+	/* background-color: rgb(101, 45, 144, 0.9); */
 }
 .appHeader {
-  position: fixed;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  max-height: 70px;
-  z-index: 2; 
-  box-shadow: 0px 15px 10px -15px #111;
-  background-color: white;
+	position: fixed;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	max-height: 70px;
+	z-index: 2;
+	box-shadow: 0px 15px 10px -15px #111;
+	background-color: white;
+}
+.scrolledAppHeader {
+	position: fixed;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	max-height: 70px;
+	z-index: 2;
+	box-shadow: 0px 15px 10px -15px #111;
+	background: unset;
+	/* background-color: white; */
 }
 .logo {
-  padding: 10px;
+	padding: 10px;
 }
 .navItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  cursor: pointer;
-  height: 70px;
-  line-height: 20px;
-  font-size: 1.3rem;
-  padding-left: 5px;
-  padding-right: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	cursor: pointer;
+	height: 70px;
+	line-height: 20px;
+	font-size: 1.3rem;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .navItem:hover,
 .navItem a:hover {
-  color: white !important;
-  background-color: rgb(101, 45, 144);
+	/* color: white !important; */
+	/* background-color: rgb(101, 45, 144); */
 }
 .navItem > a {
-  text-decoration: none !important;
-  color: unset;
+	text-decoration: none !important;
+	color: unset;
+}
+.cardItem {
+	cursor: pointer;
+	transition: transform 0.9s;
+}
+.cardItem:hover {
+	/* transform: scale(1.1); */
+}
+.swiper-slide {
+	min-width: 300px !important;
+}
+@media only screen and (max-width: 992px) {
+	.swiper-slide {
+		max-width: 46vw !important;
+	}
+}
+
+@media only screen and (max-width: 552px) {
+	.swiper-slide {
+		max-width: 92vw !important;
+	}
+}
+
+.initSection {
+	background: url('/software.svg');
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+	filter: blur(180px);
+	-webkit-filter: blur(18px);
+}
+.initSection::before {
+	filter: grayScale(100%);
+	filter: blur(80%);
+	-webkit-filter: blur(18px);
+}
+.formSection {
+	/* background-color: rgb(101, 45, 144, 0.9);; */
+	max-width: 768px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	border: 1px solid rgb(101, 45, 144, 0.9);
+	padding: 2rem;
+	font-size: 1.5rem;
+	color: rgb(101, 45, 144, 0.9);
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+	column-gap: 1.5rem;
+}
+.input-text,
+.input-text:focus,
+.input-text-50,
+.input-text-50:focus {
+	border: none;
+	border-bottom: 1px solid rgb(101, 45, 144, 0.9);
+	color: rgb(101, 45, 144, 0.9);
+	outline: none;
+	font-size: 1.5rem;
+}
+.input-text {
+	width: 100%;
+}
+.input-text-50 {
+	width: 100%;
+}
+.formSection label {
+	color: rgb(101, 45, 144, 0.9);
+	font-weight: bolder;
+	font-size: 1.2rem;
 }
